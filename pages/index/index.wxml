@@ -1,0 +1,23 @@
+<view>
+  <text class='flex_item'>这是一个小程序\n</text>
+  <text class='flex_item'>由帅气的look程序员\n</text>
+  <text class='flex_item'>为他喜欢的人所做\n</text>
+</view>
+
+<view class="{{hideOne?'hide':'show'}} ">
+  <view>
+    <text class='flex_item2'>可是问题来了\n</text>
+    <text class='flex_item2'>你是她喜欢的人吗？\n</text>
+  </view>
+  <view>
+    <button class='choBtn' bindtouchend='notMin'>不是</button>
+    <button class='choBtn2' bindtouchend='yesMin'>是</button>
+    <!--  -->
+  </view>
+</view>
+
+<view class="{{hideTwo?'hide':'show'}}">
+  <text class='flex_item2'>等了好久你终于来了</text>
+  <input class='input_item2' placeholder='输入你的生日' bindinput='setBirthday'></input>
+  <button class='choBtnMid' bindtouchend='checkMin'>我就是min</button>
+</view>

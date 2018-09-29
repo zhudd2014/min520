@@ -1,1 +1,35 @@
 /* pages/we/we.wxss */
+.flex_item{
+  font-size:20px;
+  border: 2rpx;
+  width: 750rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  justify-content:center; 
+  align-items:center;
+  display:flex; 
+}
+
+.flex_item2{
+  font-size:20px;
+  border: 2rpx;
+  width: 750rpx;
+  height: 10rpx;
+  text-align: center;
+  line-height: 100rpx;
+  justify-content:center; 
+  align-items:center;
+  display:flex; 
+}
+.flex_item3{
+  font-size:20px;
+  border: 2rpx;
+  width: 750rpx;
+  height: 220rpx;
+  text-align: center;
+  line-height: 100rpx;
+  justify-content:center; 
+  align-items:center;
+  display:flex; 
+}

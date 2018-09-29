@@ -17,7 +17,7 @@
 </view>
 
 <view class="{{hideTwo?'hide':'show'}}">
-  <text class='flex_item2'>等了好久你终于来了</text>
+  <text class='flex_item2'>我们终于见面了</text>
   <input class='input_item2' placeholder='输入你的生日' bindinput='setBirthday'></input>
   <button class='choBtnMid' bindtouchend='checkMin'>我就是min</button>
 </view>

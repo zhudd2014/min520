@@ -1,12 +1,14 @@
 <view>
-  <text>梦想，有时就是从一张纸开始\n</text>
-  <text>今天没有选择去见你，就是在写这该死的程序\n</text>
-  <text>不是不想陪你过中秋节，而是我想每次见面都更有意义\n</text>
-
-  <text>一面是梦想一面是现实\n</text>
-  <text>过去十年间，我们才见了五次\n</text>
-  <text>希望我们能让彼此的生命更有意义\n</text>
-
-  <text>这一页，为梦想努力\n</text>
+  <text class='flex_item2'>\n</text>
+  <text class='flex_item'>梦想，有时就是从一张纸开始\n</text>
+  <text class='flex_item'>今天没有选择去见你\n</text>
+  <text class='flex_item'>就是在写这该死的程序\n</text>
+  <text class='flex_item'>不是不想陪你过中秋节\n</text>
+  <text class='flex_item'>而是想让每次见面更有意义\n</text>
   <image mode="widthFix" src="/images/dream/dream.jpg"></image>
+  <text class='flex_item'>这一页，为梦想努力\n</text>
+  <text class='flex_item'>希望我们能让彼此的生命更有意义\n</text>
+
+
+
 </view>

@@ -159,7 +159,7 @@
 
 /*顶部轮播图样式*/
 swiper {
-  height: 480rpx;
+  height: 580rpx;
   padding:12rpx 20rpx 12rpx 20rpx;
   border-radius: 15rpx;
 }

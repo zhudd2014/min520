@@ -53,7 +53,7 @@ Page({
     var data = {
       "datas": [{
           "id": 1,
-          "imgurl": "/images/we/min1.jpg",
+          "imgurl": "/images/we/min5.jpg",
           "text": "这个抖音是不是给我看的",
         },
         {

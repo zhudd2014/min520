@@ -56,18 +56,15 @@ Page({
     var data = {
       "datas": [{
           "id": 1,
-          "imgurl": "/images/we/min1.jpg",
-          "text": "这个抖音是不是给我看的",
+          "imgurl": "/images/we/min5.jpg",
         },
         {
           "id": 2,
           "imgurl": "/images/we/min2.jpg",
-          "text": "min2",
         },
         {
           "id": 3,
           "imgurl": "/images/we/min3.jpg",
-          "text": "减肥是不可能的，胖回来再说",
         },
       ]
     };

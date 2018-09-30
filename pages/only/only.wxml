@@ -14,7 +14,7 @@
       </swiper>
     </view>
   </view>
-  <view style="margin-bottom: 50px;"></view>
+  <view style="margin-bottom: 20px;"></view>
 
   <view style="display:flex; flex-direction:row;justify-content:space-around">
     <image class="touxiang" src="/images/we/min_touxiang.jpg" bindtouchend='goMin'></image>

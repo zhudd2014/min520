@@ -49,4 +49,4 @@
   </view>
 </view>
 
-<view bindtouchstart='touchStart' bindtouchend="touchEnd" class='dream-process'> deram process</view>
+<view bindtouchstart='touchStart' bindtouchend="touchEnd" class='dream-process'> little by little</view>

@@ -1,0 +1,25 @@
+<!--pages/we/we.wxml-->
+
+
+<view>
+  <text class='flex_item2'>\n</text>
+  <text class='flex_item'>照片无言，未磨尽时间</text>
+  <image mode="widthFix" src="/images/we/2003wish.jpg"></image>
+</view>
+
+<view>
+  <text class='flex_item3'>\n</text>
+  <text class='flex_item'>上天有意，让你我再遇</text>
+  <image mode="widthFix" src="cloud://min520.6d69-min520/we/we1.jpeg"></image>
+</view>
+
+
+<view>
+  <text class='flex_item'>是否可以，从今天起\n</text>
+  <text class='flex_item'>让我带着你\n</text>
+
+  <text class='flex_item'>去坐大峡谷的过山车\n</text>
+  <text class='flex_item'>去听王力宏的演唱会\n</text>
+  <text class='flex_item'>去看为你生长的腹肌\n</text>
+  <text class='flex_item'>去占有彼此最美好的生命\n</text>
+</view>

@@ -1,0 +1,52 @@
+<view>
+  <!-- 轮播 -->
+  <view hidden='{{pageMain}}'>
+    <view class="index-header" style="display:{{displaySwiper}}">
+      <swiper class="index-swiper" indicator-dots="true" interval="10000" autoplay="true" indicator-color="rgba(255, 255, 255, .2)" indicator-active-color="rgba(255, 255, 255, .7)">
+        <block wx:key="id" wx:for="{{lunboData}}">
+          <swiper-item>
+            <image mode="aspectFill" src="{{item.imgurl}}" style="width:100%" />
+            <view class="swiper-mask"></view>
+            <view class="swiper-desc">
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+  <view style="margin-bottom: 20px;"></view>
+
+  <view style="display:flex; flex-direction:row;justify-content:space-around">
+    <image class="touxiang" src="/images/we/min_touxiang.jpg" bindtouchend='goMin'></image>
+    <view bindtouchend='goWe'>
+      <text decode="{{true}}">&nbsp;&nbsp;2018.07.28\n</text>
+      <text decode="{{true}}">&nbsp;&nbsp;&nbsp;shenzhen\n</text>
+      <text decode="{{true}}">nice to meet u\n</text>
+    </view>
+    <image class="touxiang" src="/images/we/look_touxiang.jpg" bindtouchend='goLook'></image>
+  </view>
+
+</view>
+<view style="margin-bottom: 50px;height:70px;"></view>
+
+
+<view class="music-box ui-row" style="margin-bottom: 50px;height:70px;">
+  <view class="ui-col ui-col-align-left align-left valign-middle" style="padding-left: 20px;">
+    <view class="ui-col-content align-left valign-middle">
+      <view class="music-title">需要你陪</view>
+      <view class="music-singer">look</view>
+    </view>
+  </view>
+  <view bindtap="playerMusic" class="music-ui-col ui-col ui-col-align-right align-right valign-middle" data-id="1" style="padding-right: 10px;flex:0 0 80px;" wx:if="{{!musicPlay}}">
+    <view class="ui-col-content align-right valign-middle">
+      <span class="ui-icon icon-playmusic" color="#333" size="50" style="color: #333;font-size: 50px;" type="playmusic"></span>
+    </view>
+  </view>
+  <view bindtap="playerMusic" class="music-ui-col ui-col ui-col-align-right align-right valign-middle" data-id="2" style="padding-right: 10px;flex:0 0 80px;" wx:if="{{musicPlay}}">
+    <view class="ui-col-content align-right valign-middle">
+      <span class="ui-icon icon-pausemusic" color="#333" size="50" style="color: #333;font-size: 50px;" type="pausemusic"></span>
+    </view>
+  </view>
+</view>
+
+<view bindtouchstart='touchStart' bindtouchend="touchEnd" class='dream-process'> little by little</view>

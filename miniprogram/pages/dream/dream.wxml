@@ -1,0 +1,10 @@
+<view>
+  <text class='flex_item2'>\n</text>
+  <text class='flex_item'>梦想，有时就是从一张纸开始\n</text>
+  <text class='flex_item'>今天没有选择去见你\n</text>
+  <text class='flex_item'>就是在写这该死的程序\n</text>
+  <text class='flex_item'>不是不想陪你过中秋节\n</text>
+  <text class='flex_item'>而是想让每次见面更有意义\n</text>
+  <image mode="widthFix" src="cloud://min520.6d69-min520/dream/dream.jpg"></image>
+  <text class='flex_item'>这一页，为梦想努力\n</text>
+</view>

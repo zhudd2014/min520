@@ -1,8 +1,0 @@
-
-<template name="tempFooter"> 
-  <view class="header">    
-    <view>
-       min and look
-    </view>
-  </view>
-</template>

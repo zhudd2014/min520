@@ -61,14 +61,12 @@ Page({
 
     db.collection('lunboData').get({
       success: res => {
-        console.log('lunboData:'+res.data);
+        console.log('lunboData:'+res.data[0]);
 
         self.setData({
           lunboData: res.data
         })
 
-        const back = wx.getBackgroundAudioManager();
-        back.src = res.data.src;
         console.log('[数据库] [查询记录] 成功: ', res)
       },
       fail: err => {

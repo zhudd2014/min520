@@ -1,10 +1,3 @@
-// var Api = require('../../utils/api.js');
-// var util = require('../../utils/util.js');
-// var WxParse = require('../../wxParse/wxParse.js');
-// var wxApi = require('../../utils/wxApi.js')
-// var wxRequest = require('../../utils/wxRequest.js')
-// import config from '../../utils/config.js'
-// var pageCount = config.getPageCount;
 Page({
   data: {
     birthday: "",
@@ -14,26 +7,7 @@ Page({
 
 
   onLoad: function(options) {
-    wx.hideTabBar({});
-    var self = this;
-    var data = {
-      "datas": [{
-          "id": 1,
-          "imgurl": "/images/we/min5.jpg",
-        },
-        {
-          "id": 2,
-          "imgurl": "/images/we/min2.jpg",
-        },
-        {
-          "id": 3,
-          "imgurl": "/images/we/min3.jpg",
-        },
-      ]
-    };
-    self.setData({
-      lunboData: data.datas
-    });
+
   },
 
 

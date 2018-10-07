@@ -11,13 +11,14 @@
   </view>
   <view>
     <button class='choBtn' bindtouchend='notMin'>不是</button>
-    <button class='choBtn2' bindtouchend='yesMin'>是</button>
-    <!--  -->
+    <button class='choBtn2' open-type="getUserInfo" bindtouchend='yesMin'>是</button>
+    <!-- TODO 这里加了一个 open-type="getUserInfo" -->
+    <!-- 如果没有授权不要走下一步，是否OK -->
   </view>
 </view>
 
 <view class="{{hideTwo?'hide':'show'}}">
   <text class='flex_item2'>我们终于见面了</text>
   <input class='input_item2' placeholder='输入你的生日' bindinput='setBirthday'></input>
-  <button class='choBtnMid' open-type="getUserInfo" bindtouchend='checkMin'>我就是min</button>
+  <button class='choBtnMid' bindtouchend='checkMin'>我就是min</button>
 </view>

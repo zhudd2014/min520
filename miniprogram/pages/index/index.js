@@ -3,6 +3,7 @@ Page({
     birthday: "",
     hideOne: false,
     hideTwo: true,
+    hasAuthed:false,
   },
 
 
@@ -10,6 +11,16 @@ Page({
 
   },
 
+  getUserInfo: function (e) {
+    var that = this;
+    console.log(e.detail.errMsg)
+    if (e.detail.errMsg == 'getUserInfo:ok'){
+      that.setData({
+        hasAuthed: true,
+      })
+
+    }
+  },
 
   setBirthday: function(e) {
     this.data.birthday = e.detail.value;
@@ -30,7 +41,14 @@ Page({
   },
 
   checkMin: function(e) {
-
+    if(!this.data.hasAuthed){
+      wx.showToast({
+        title: "用户未授权",
+        icon: 'loading',
+        duration: 1500
+      })
+      return;
+    }
 
     if (this.data.birthday != '910418') {
       var random = Math.floor(Math.random() * 10);

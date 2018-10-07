@@ -3,7 +3,7 @@ Page({
     birthday: "",
     hideOne: false,
     hideTwo: true,
-    hasAuthed:false,
+    hasAuthed: false,
   },
 
 
@@ -11,13 +11,21 @@ Page({
 
   },
 
-  getUserInfo: function (e) {
+  getUserInfo: function(e) {
     var that = this;
     console.log(e.detail)
- 
-    //TODO 根据openId直接跳到main页面   
 
-    if (e.detail.errMsg == 'getUserInfo:ok'){
+
+    if (e.detail.errMsg == 'getUserInfo:ok') {
+
+      //TODO 根据openId直接跳到main页面，暂时根据nickName跳转   
+      var nickName = JSON.parse(e.detail.rawData).nickName;
+      if (nickName == '南柯' || nickName == 'look') {
+        wx.navigateTo({
+          url: '../main/main'
+        })
+      }
+
       that.setData({
         hasAuthed: true,
         hideOne: true,
@@ -37,7 +45,7 @@ Page({
 
 
   checkMin: function(e) {
-    if(!this.data.hasAuthed){
+    if (!this.data.hasAuthed) {
       wx.showToast({
         title: "用户未授权",
         icon: 'loading',

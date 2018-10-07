@@ -13,12 +13,16 @@ Page({
 
   getUserInfo: function (e) {
     var that = this;
-    console.log(e.detail.errMsg)
+    console.log(e.detail)
+ 
+    //TODO 根据openId直接跳到main页面   
+
     if (e.detail.errMsg == 'getUserInfo:ok'){
       that.setData({
         hasAuthed: true,
+        hideOne: true,
+        hideTwo: false,
       })
-
     }
   },
 
@@ -31,14 +35,6 @@ Page({
     })
   },
 
-  yesMin: function(e) {
-    var that = this;
-    that.setData({
-      hideOne: true,
-      hideTwo: false,
-    })
-
-  },
 
   checkMin: function(e) {
     if(!this.data.hasAuthed){

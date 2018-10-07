@@ -1,5 +1,8 @@
 {
   "cloud": true,
+  "requiredBackgroundModes": [
+    "audio"
+  ],
   "pages": [
     "pages/index/index",
     "pages/min/min",

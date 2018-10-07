@@ -7,7 +7,7 @@ var flag_hd = true;
 Page({
   data: {
     musicSrc: '',
-    musicTittle: '',
+    musicTitle: '',
     musicText: '',
     isTip: true,
     postsList: [],
@@ -42,12 +42,12 @@ Page({
 
         self.setData({
           musicSrc: res.data.src,
-          musicTittle: res.data.tittle,
+          musicTitle: res.data.title,
           musicText: res.data.text,
         })
 
         const back = wx.getBackgroundAudioManager();
-        back.title = res.data.tittle;
+        back.title = res.data.title;
         back.src = res.data.src;
         console.log('[数据库] [查询记录] 成功: ', res)
       },

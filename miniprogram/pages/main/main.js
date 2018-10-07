@@ -47,7 +47,7 @@ Page({
         })
 
         const back = wx.getBackgroundAudioManager();
-        back.title = res.data.title;
+        back.title = res.data.tittle;
         back.src = res.data.src;
         console.log('[数据库] [查询记录] 成功: ', res)
       },
